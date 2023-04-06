@@ -2,20 +2,10 @@ package seng201Project;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
-import java.awt.BorderLayout;
-
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.SwingConstants;
-import java.awt.BorderLayout;
-
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.SwingConstants;
 
 
 
-public class Athlete {
+public class Athlete1 {
 	public int attack;
 	public int defense;
 	public double health;
@@ -23,7 +13,7 @@ public class Athlete {
 	public int stamina = 100;
 	public String name;
 	
-	public Athlete(int attack, int defense, double health, double price, String name) {
+	public Athlete1(int attack, int defense, double health, double price, String name) {
 		this.name = name;
 		this.attack = attack;
 		this.defense = defense;
@@ -59,11 +49,10 @@ public class Athlete {
         myFrame.setVisible(true);
         myFrame.setBounds(300, 200, 700, 400);
         JLabel myText = new JLabel("I'm a label in the window",
-                SwingConstants.NORTH_WEST);
+                SwingConstants.CENTER);
         myFrame.getContentPane().add(myText);
         myText.setText(String.valueOf(name));
 	}
-
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		 PionelPessi pepsi = new PionelPessi();
