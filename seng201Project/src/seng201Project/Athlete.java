@@ -48,6 +48,10 @@ public class Athlete {
 		return stamina;
 	}
 	
+	public String toString() {
+		return(name);
+	}
+	
 
 	/**
 	 * @wbp.parser.entryPoint
@@ -78,6 +82,8 @@ public class Athlete {
         displayAttack.setText(String.valueOf(attack));
 		
 	}
+	
+	
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
