@@ -48,6 +48,10 @@ public class Athlete {
 		return stamina;
 	}
 	
+	public String toString() {
+		return name;
+	}
+	
 
 	/**
 	 * @wbp.parser.entryPoint
