@@ -23,28 +23,29 @@ public class Athlete {
 		this.health = health;
 		this.price = price;
 	}
-	public void getAttack() {
-		System.out.println(attack);
+	public int getAttack() {
+		return attack;
 	}
 	
-	public void getDefense() {
-		System.out.println(defense);
+	public int getDefense() {
+		return defense;
 	}
 	
-	public void getName() {
-		System.out.println(name);
+	public String getName() {
+		return name;
 	}
 	
-	public void getPrice() {
-		System.out.println(price);
+	public double getPrice() {
+		return price;
 	}
 	
-	public void getHealth() {
-		System.out.println(health);
+	public double getHealth() {
+		return health;
+		
 	}
 	
-	public void getStamina() {
-		System.out.println(stamina);
+	public int getStamina() {
+		return stamina;
 	}
 	
 
