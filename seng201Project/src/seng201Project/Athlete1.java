@@ -44,19 +44,10 @@ public class Athlete1 {
 		System.out.println(stamina);
 	}
 	
-	public void mainWindow() {
-		JFrame myFrame = new JFrame("Test GUI");
-        myFrame.setVisible(true);
-        myFrame.setBounds(300, 200, 700, 400);
-        JLabel myText = new JLabel("I'm a label in the window",
-                SwingConstants.CENTER);
-        myFrame.getContentPane().add(myText);
-        myText.setText(String.valueOf(name));
-	}
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		 PionelPessi pepsi = new PionelPessi();
-		 pepsi.mainWindow();
 		 
 
 	}
