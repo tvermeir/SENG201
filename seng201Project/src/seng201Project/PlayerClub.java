@@ -9,7 +9,7 @@ public class PlayerClub {
 	ArrayList<Athlete> athleteList = new ArrayList<Athlete>();
 	ArrayList<Athlete> starterList = new ArrayList<Athlete>();
 	ArrayList<Athlete> reserveList = new ArrayList<Athlete>();
-	ArrayList<PurchaseableItem> itemInventory;
+	ArrayList<PurchaseableItem> itemInventory = new ArrayList<PurchaseableItem>();
 	ArrayList<Athlete> topScorer = new ArrayList<Athlete>();
 	
 	public PlayerClub(float balance, String name) {
