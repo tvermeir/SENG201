@@ -11,6 +11,7 @@ public class PlayerClub {
 	ArrayList<Athlete> reserveList = new ArrayList<Athlete>();
 	ArrayList<PurchaseableItem> itemInventory = new ArrayList<PurchaseableItem>();
 	ArrayList<Athlete> topScorer = new ArrayList<Athlete>();
+	ArrayList<Playercard> Cardlist = new ArrayList<Playercard>();
 	
 	public PlayerClub(float balance, String name) {
 		bankBalance = balance;
@@ -56,13 +57,28 @@ public class PlayerClub {
 		
 		
 	}
+	
+	public String getName() {
+		return teamName;
+	}
+	
+	
+	
+	public ArrayList<Playercard> getCardList() {
+		for (Athlete athlete: athleteList) {
+			Playercard card = new Playercard(athlete);
+			Cardlist.add(card);
+		}
+		return Cardlist;
+	}
+	
+	
+	
+	
+	
 	public static void main(String[] args) {
-		Athlete pessi = new Athlete(1, 1, 1, 1, "Pionel Pessi");
-		Athlete penaldo = new Athlete(1, 1, 1, 1, "Pisstiano Penaldo");
-		PlayerClub Shitspurs = new PlayerClub(0, "Shitspurs");
-		Shitspurs.addPlayer(pessi);
-		Shitspurs.addPlayer(penaldo);
-		System.out.println(Shitspurs.athleteList);
+		
+		
 		
 	
 	}
